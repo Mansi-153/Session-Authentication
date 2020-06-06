@@ -1,0 +1,46 @@
+<style>
+.box{
+    width: 400px;
+    background-color: aliceblue;
+    display: block;
+    margin: auto;
+    box-shadow: black;
+    box-shadow:  -1px 1px #e9ebee,
+         -2px 2px #f2f5f8,
+         -3px 3px #f3f4f7,
+         -4px 4px #efeff0,
+         -5px 5px #f2f4f8;
+}
+.log{
+    height: 70px; 
+    width: 400px; 
+    background-color: blue;
+    font-size: 50px; 
+    color: beige; 
+    font-family: 'Forte';
+}
+.text{
+    border: 1.5px solid blue;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 45px;
+    width: 350px;
+}
+.btn{
+    margin-top: 100px;
+    display: block;
+    margin: auto;
+    height: 45px;
+    width: 125px;
+}
+</style>
+<form method="POST" action='/login'>
+    <div class="box" style="margin-top: 100px;height: 500px;">
+        <div class="log"><p style="margin-left: 50px;">Login</p></div>
+        <input class ="text" type="email" name="email" placeholder="Enter Your Email Id"/>
+        <input class ="text" type="password" name="password" placeholder="Enter Your Password"/>
+        <input class ="btn" type="submit" id="button" style="margin-top: 80px;"/><br><br><br>
+        <a href="/register">Register</a>
+    </div>
+    </form>
